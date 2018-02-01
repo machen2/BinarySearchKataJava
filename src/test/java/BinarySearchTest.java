@@ -40,4 +40,10 @@ public class BinarySearchTest {
         int[] arr = new int[]{1,2,3};
         assertEquals(0, BinarySearch.search(1, arr));
     }
+
+    @Test
+    public void givenArrayWith7ElementsAndMatchIn2IndexItReturns2() {
+        int[] arr = new int[]{1,2,3,4,5,6,7};
+        assertEquals(2, BinarySearch.search(3, arr));
+    }
 }
