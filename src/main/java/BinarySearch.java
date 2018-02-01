@@ -4,8 +4,12 @@ public class BinarySearch {
             return -1;
         }
 
-        if (num == arr[0]) {
-            return 0;
+        int leftIndex = 0;
+        int rightIndex = arr.length-1;
+        int midpoint = (leftIndex + rightIndex)/2;
+
+        if (num == arr[midpoint]) {
+            return midpoint;
         }
 
         return -1;

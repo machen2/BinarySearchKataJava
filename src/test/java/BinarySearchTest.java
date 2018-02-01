@@ -22,4 +22,12 @@ public class BinarySearchTest {
         int[] arr = new int[]{1};
         assertEquals(-1, BinarySearch.search(2, arr));
     }
+
+    @Test
+    public void givenAnArrayWithThreeElementsAndAMatchInIndex1ItReturns1() {
+        int[] arr = new int[]{1,2,3};
+        assertEquals(1, BinarySearch.search(2, arr));
+    }
+
+
 }
