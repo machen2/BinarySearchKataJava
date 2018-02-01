@@ -3,6 +3,11 @@ public class BinarySearch {
         if (arr.length == 0) {
             return -1;
         }
-        return 0;
+
+        if (num == arr[0]) {
+            return 0;
+        }
+
+        return -1;
     }
 }

@@ -12,8 +12,14 @@ public class BinarySearchTest {
     }
 
     @Test
-    public void givenAnArrayWithNumberOneSearchReturns0() {
+    public void givenAnArrayWithAMatchSearchReturns0() {
         int[] arr = new int[]{1};
         assertEquals(0, BinarySearch.search(1, arr));
+    }
+
+    @Test
+    public void givenAnArrayWithOneElementThatDoesntMatchSearchReturnsNeg1() {
+        int[] arr = new int[]{1};
+        assertEquals(-1, BinarySearch.search(2, arr));
     }
 }
