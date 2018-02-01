@@ -11,5 +11,9 @@ public class BinarySearchTest {
         assertEquals(-1, BinarySearch.search(1, emptyArray));
     }
 
-
+    @Test
+    public void givenAnArrayWithNumberOneSearchReturns0() {
+        int[] arr = new int[]{1};
+        assertEquals(0, BinarySearch.search(1, arr));
+    }
 }
