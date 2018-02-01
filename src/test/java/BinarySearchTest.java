@@ -34,4 +34,10 @@ public class BinarySearchTest {
         int[] arr = new int[]{1,2,3};
         assertEquals(2, BinarySearch.search(3, arr));
     }
+
+    @Test
+    public void givenArrayWithThreeElementsAndMatchInFirstIndexItReturns0() {
+        int[] arr = new int[]{1,2,3};
+        assertEquals(0, BinarySearch.search(1, arr));
+    }
 }

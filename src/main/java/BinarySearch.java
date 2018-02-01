@@ -11,6 +11,9 @@ public class BinarySearch {
             } else if (num > arr[midpoint]) {
                 leftIndex = midpoint + 1;
                 midpoint = (leftIndex + rightIndex)/2;
+            } else {
+                rightIndex = midpoint - 1;
+                midpoint = (leftIndex + rightIndex)/2;
             }
         }
 
